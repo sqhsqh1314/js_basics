@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	<script>
+		function reverse(arr){
+			for (var i=0;i<arr.length/2;i++) {
+				var temp=arr[i];
+				arr[i]=arr[arr.length-1-i];
+				arr[arr.length-1-i]=temp;
+				
+			}
+			return arr;
+		}
+		var result=reverse([34,67,342,4,2,1,3]);
+		console.log(result);
+	</script>
+	</body>
+</html>

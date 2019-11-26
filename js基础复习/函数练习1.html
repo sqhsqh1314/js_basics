@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<script>
+			//实现求n-m之间所有数的和
+			var sum = 0;
+
+			function everySum(n, m) {
+				for(var i = n; i < m; i++) {
+					sum += i;
+
+				}
+				return sum;
+			}
+			var e = everySum(1, 10);
+
+			console.log(e);
+			//求圆的面积
+			function mianJi(r) {
+				return Math.PI * r * r;
+			}
+			console.log(mianJi(6));
+//			判断是否为质数
+			function zhishu(n) {
+				for(var j = 2; j < n; j++) {
+					if(n % j == 0) {
+						return false;
+					}
+
+				}
+				return true;
+				
+
+			}
+			console.log(zhishu(7));
+		</script>
+	</body>
+
+</html>

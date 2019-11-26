@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<!--计算100以内的奇数和-->
+		<script>
+			var sum = 0;
+			var i = 1;
+			while(i <= 100) {
+				if(i % 2 == 0) {
+					i++;
+					continue;
+
+				}
+				sum = i + sum;
+				i++;
+
+			}
+
+			console.log(sum);
+		</script>
+	</body>
+
+</html>
